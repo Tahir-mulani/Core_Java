@@ -1,0 +1,38 @@
+Q1. Write a java program to take input from array of size 5 and display it.
+Q2. Write a java program to calculate sum of array is size 5.
+Q3. Write a java program to find maximum and minimum number in array.
+Q4. Write a java program to find even and odd number in array.
+Q5. Write a java program to find positive and negative number in array.
+Q6. Write a java program to search element in array , its element found or not.
+Q7. Write a java program to display the reverse array.
+Q8. Write a java program to calculate the sum of even or odd numbers.
+Q9. Write java program to merge two array and display it.
+Q10.Write a java program to check array is palindrome or not.
+Q11. Print array elements at even indices.
+Input: arr = [4, 9, 7, 11, 6]
+Output: 4 7 6
+Explanation: Even indices → 0, 2, 4 → elements 4, 7, 6.
+Q12. Write a java program to find missing value in array.
+Input : 1 4 6 7 11 15
+Output : 2 3 5 8 9 10 12 13 14
+Q13. Write a java program to copy one array to another array.
+Q14. Write a java program to insert value at specific index of array.
+Input : 1 2 3 4 5
+Index : 2
+Value : 200
+Output : 1 2 200 3 4 5
+Q15. Write a java program to delete value at specific index of array.
+Input : 1 2 3 4 5
+Index : 2
+Output : 1 2 4 5
+Q16. Write a java program to find second highest value of array.
+Input : 10 30 50 20 40
+Output : 40
+Q17.  Write a java program to check majority element of array.
+Q18. Write a java program to remove duplicates values of array.
+Q19. Write a java program to find prime number of a array.
+Q20. Write a java program to find perfect number of a array.
+Q21. Write a java program to find duck number of a array.
+Q22. Write a java program to find strong number of a array.
+Q23. Write a java program to find armstrong number of a array.
+

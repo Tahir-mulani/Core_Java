@@ -1,0 +1,46 @@
+Q1. WAP to create two matrix of 3 x3  and calculate addition of two matrix and store in third matrix
+Q2. WAP to create create matrix of 3 x 3 and sort the column data  and display it
+Q3.WAP to create matrix of 3 x 3 and transpose it means convert row to column and column to row
+Q4. WAP to create two matrix of 3 x 3 and perform matrix multiple on two matrix and store its result in 3rd matrix
+Q5. WAP to create 3 x 3 matrix and find the second max from every column.
+Q6. Write a Java program to print the elements of a given n × n matrix in spiral order, and then print the same matrix in reverse spiral order.
+Example:
+	Input:
+1  2  3
+4  5  6
+7  8  9
+Output Spiral: 1 2 3 6 9 8 7 4 5  
+Output Reverse Spiral: 5 4 7 8 9 6 3 2 1
+
+Q7. Rotate a given n × n matrix 90 degrees clockwise without using an extra matrix.
+ Additionally, write logic to rotate each concentric square layer separately.
+Example:
+	Input:
+1  2  3
+4  5  6
+7  8  9
+
+90° Rotation:
+7 4 1
+8 5 2
+9 6 3
+Q8. Given an n × n matrix (with positive and negative integers), find the sub-matrix with the maximum sum and print the sum along with coordinates of the sub-matrix.
+Example:
+Input:
+ 1  -2  -1   4
+-8   3   4   2
+ 3   8  10  -8
+-4  -1   1   7
+Output: Maximum Sum = 27
+Coordinates: (1,1) to (2,2)
+Q9. Write a Java program to traverse a given N x N 2D array in spiral order, but only print elements that are prime numbers.
+Example:
+Input:  
+4x4 matrix  
+1  2  3  4  
+5  6  7  8  
+9 10 11 12  
+13 14 15 16  
+Output:  
+2 3 7 11 13
+Q10. Write a Java program to input a 2D array (matrix) and calculate the sum of each row and the sum of each column, then display the results.

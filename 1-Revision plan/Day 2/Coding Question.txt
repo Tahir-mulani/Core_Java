@@ -1,0 +1,11 @@
+
+1.Write a program using for loop to print numbers from 1 to 50.
+2.Write a program using for loop to print the square of numbers from 1 to 10.
+3.Write a program using for loop to calculate the sum of the first 100 natural numbers.
+4.Write a program using for loop to display the multiplication table of a given number.
+5.Write a program using for loop to count the number of digits in a given number.
+6.Write a program using for loop to reverse a given number.
+7.Write a program using for loop to check whether a given number is palindrome.
+8.Write a program using for loop to generate the Fibonacci series up to n terms.
+9.Write a program using for loop to print all prime numbers between 1 and 100.
+10.Write a program using nested for loops to print a pyramid star pattern.

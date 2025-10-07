@@ -1,0 +1,32 @@
+Section A: Two Pointer Technique (10 Questions)
+
+Sum of Two Numbers Equals Target
+Given a sorted array and a target, check if there are two numbers that sum up to the target.
+
+Check Palindrome Using Two Pointers
+Check if a string is a palindrome using the two-pointer approach.
+
+Count Pairs with Given Sum
+Count how many pairs in an unsorted array sum up to a target using two pointers.
+
+Merge Two Sorted Arrays (No Extra Space)
+Merge two sorted arrays in-place using the two-pointer method.
+
+Remove Duplicates from Sorted Array
+Remove duplicates from a sorted array using two pointers and return new length.
+
+Move Zeros to End
+Move all 0s to the end of the array while maintaining the order of non-zero elements.
+
+Reverse an Array In-Place
+Reverse an array using the two-pointer technique.
+
+Find Intersection of Two Sorted Arrays
+Return the intersection of two sorted arrays using two pointers.
+
+Sort Colors (Dutch National Flag Problem)
+Sort an array of 0s, 1s, and 2s using two/three pointers.
+
+Check if Two Strings Are Anagrams (Using Sorting and Two Pointers)
+Check if two strings are anagrams using sorting and comparing via two pointers.
+

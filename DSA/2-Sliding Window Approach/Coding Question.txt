@@ -1,0 +1,31 @@
+ Sliding Window Technique (10 Questions)
+
+Maximum Sum Subarray of Size K
+Find the maximum sum of a subarray with size k.
+
+Minimum Sum Subarray of Size K
+Find the minimum sum of a subarray with size k.
+
+Check if Subarray with Given Sum Exists
+For a given sum, check if there’s a subarray with that sum using sliding window.
+
+Find First Negative Number in Every Window of Size K
+For each window of size k, find the first negative number.
+
+Longest Substring Without Repeating Characters
+Return the length of the longest substring with all unique characters.
+
+Count Occurrences of Anagram
+Count how many times an anagram of a string appears in another string.
+
+Maximum Number of Vowels in a Substring of Given Length
+Find the maximum number of vowels in any substring of length k.
+
+Find Max Average of Subarray of Size K
+Find the maximum average of any subarray of size k.
+
+Number of Subarrays of Size K with Average Greater Than Threshold
+Count how many subarrays of size k have an average greater than a given threshold.
+
+Sliding Window Maximum (Optional Advanced)
+Return the maximum in every window of size k (can be skipped or bonus).

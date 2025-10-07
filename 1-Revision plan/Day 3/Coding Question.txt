@@ -1,0 +1,10 @@
+1.Write a program to find the second largest element in an array.
+2.Write a program to reverse an array without using an extra array.
+3.Write a program to check if two arrays are equal (same elements in the same order).
+4.Write a program to find the frequency of each element in an array.
+5.Write a program to sort an array in ascending order without using built-in sort methods.
+6.Write a program to find the missing number in an array of n consecutive integers.
+7.Write a program to rotate an array by k positions.
+8.Write a program to find the duplicate elements in an array.
+9.Write a program to merge two sorted arrays into a single sorted array.
+10.Write a program to find the majority element (element appearing more than n/2 times) in an array.

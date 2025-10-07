@@ -1,0 +1,73 @@
+//Solve all assignments using brute force approach
+_______________________________________________________
+
+1. Find the Maximum Subarray Sum (Brute Force)
+ Problem:Find the maximum sum of any subarray.
+Example:
+Input: [-2, 1,  -3,   4,   -1,  2,  1,   -5.  ,4]  
+Output: 6.  (from subarray [4,-1,2,1])
+
+2. Check for Triplets with Zero Sum
+Problem:
+Check if any three elements in the array sum to 0.
+Example:
+Input: [-1, 0, 1, 2, -1, -4]  
+Output: (-1, 0, 1), (-1, -1, 2)
+
+3. Count All Pairs with Difference k
+ Problem:
+Find all pairs (i, j) such that |arr[i] - arr[j]| = k.
+Example:
+Input: arr = [1, 5, 3, 4, 2], k = 2  
+Output: (1,3), (5,3), (3,1), (4,2)
+
+4. Check If Array Is Sorted
+ Problem:
+Determine whether an array is sorted in non-decreasing order.
+Example:
+Input: [1, 2, 2, 3, 4]  
+Output: true
+
+5. Find Missing Number in 1 to N
+Problem:
+Find a missing number from 1 to N in array of N-1 size.
+Example:
+Input: [1, 2, 4, 5], N = 5  
+Output: 3
+
+
+6. Count Number of Even and Odd Elements
+ Problem:
+Count how many even and odd elements are present.
+Example:
+Input: [1, 2, 3, 4, 5, 6]  
+Output: Even: 3, Odd: 3
+
+
+7. Find Intersection of Two Arrays
+ Problem:
+Print common elements in two arrays using brute force.
+Example:
+Input: arr1 = [1, 2, 3], arr2 = [2, 3, 4]  
+Output: 2, 3
+
+
+Q8. Write a program in java to count the number of inversion in a given array
+Expected Output :
+ The given array is : 1 9 6 4 5
+ The inversions are: (9, 6) (9, 4) (9, 5) (6, 4) (6, 5)
+ The number of inversion can be formed from the array is: 5
+ 
+Q9. Write a program in java to count all distinct pairs for a specific difference
+Expected Output:
+ The given array is:
+ 5 2 3 7 6 4 9 8
+ The distinct pairs for difference 5 are: [7, 2] [8, 3] [9, 4]
+ Number of distinct pairs for difference 5 are: 3
+ 
+Q10. Write a program in java to find the maximum repeating number in a given array.
+The array range is [0..n-1] and the elements are in the range [0..k-1] and k<=n..
+ Expected Output:
+ The given array is:
+ 2 3 3 5 3 4 1 7 7 7 7
+ The maximum repeating number is: 7
