@@ -1,4 +1,4 @@
-//5. Reverse an Array
+//5. Reverse an Array 
 
 import java.util.*;
 public class ReverseAPP
@@ -6,7 +6,7 @@ public class ReverseAPP
 	public static void main(String x[])
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter array size");
+		System.out.println("Enter the  array size");
 		int n = sc.nextInt();
 		int arr[] = new int[n];
 		System.out.println("Enter array element");
