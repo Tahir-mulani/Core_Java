@@ -11,10 +11,10 @@ public class EvenOdd
 		Scanner sc =new Scanner(System.in);
 		System.out.println("Enter number");
 		int n=sc.nextInt();
-		String result = isEven(n);
+		String result = isEven(n);    //function calling
 		System.out.println(result);
 	}
-	public static String isEven(int n)
+	public static String isEven(int n)    //defination of function
 	{
 		if(n%2==0)
 		{
