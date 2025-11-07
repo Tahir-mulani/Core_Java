@@ -19,12 +19,45 @@ class RearrangeElementArray
 	}
 	public void RearrangeElement()
 	{
+		//seperate positive and negative elements
+		int n=a.length;
+		int []positives=new int[n];
+		int[]negatives = new int[n];
+		int p=0,ne=0;
+		
+		//seperate element into two arrays
 		for(int i=0;i<a.length;i++)
 		{
-			if(a[i]<0)
-			{
-				
+			if(a[i]<=0)
+				positives[p++]=a[i];
+			else
+				negatives[ne++]=a[i];				
 		}
+		
+		//rearrange alternately
+		int i=0,j=0,k=0;
+		boolean flag =true;  //start with positive.
+		
+		while(i<p && j<ne)
+		{
+			if(flag)
+				a[k++]=positives[i++];
+			else
+				a[k++]=negatives[j++];
+			flag = !flag;
+		}
+		
+		//add remaining elements
+		while(i<p)
+			a[k++]=positives[i++];
+		while(j<ne)
+			a[k++]=negatives[j++];
+		
+		//print the rearranged array
+		System.out.println("Rearranged array:");
+		for(int val:a)
+			System.out.print(val+" ");
+		
 	}
 }
 public class RearrangeElementArrayAPP
@@ -41,8 +74,8 @@ public class RearrangeElementArrayAPP
 		{
 			a[i]=sc.nextInt();
 		}
-		MajorityElementArray m = new MajorityElementArray(a);
-		m.MajorityElement();
+		RearrangeElementArray m = new RearrangeElementArray(a);
+		m.RearrangeElement();
 		
 		
 	}
