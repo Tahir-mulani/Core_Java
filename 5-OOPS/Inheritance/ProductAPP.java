@@ -24,10 +24,10 @@ class Product
 	}
 	void display()
 	{
-		System.out.println("Price is: "+CalculatePrice());
+		System.out.println("Id: "+id+"\nProduct Name: "+name+"\nPrice : "+CalculatePrice());
 	}
 }
-class Electronics extends Electronics
+class Electronics extends Product
 {
 	Electronics(int id,String name,double price)
 	{
@@ -35,18 +35,18 @@ class Electronics extends Electronics
 	}
 	double CalculatePrice()
 	{
-		return price-0.5;
+		return price-0.50;
 	}
 }
 class Clothing extends Product
 {
-	Clothing(int id,String name,double price);
+	Clothing(int id,String name,double price)
 	{
 		super(id,name,price);
 	}
 	double CalculatePrice()
 	{
-		return price-0.2;
+		return price-0.20;
 	}
 }
 public class ProductAPP
@@ -54,17 +54,30 @@ public class ProductAPP
 	public static void main(String x[])
 	{
 		Scanner sc = new Scanner(System.in);
+		System.out.println("\n---------->For Electronics Product<---------");
 		System.out.println("Enter id");
 		int id = sc.nextInt();
 		System.out.println("Enter name");
 		sc.nextLine();
 		String name=sc.nextLine();
 		System.out.println("Enter price");
-		double price = sc.nextDouble();
-		
+		double price = sc.nextDouble();		
 		Electronics e = new Electronics(id,name,price);
-		System.out.println("\nElectronics Product Details");
 		
-		
+		System.out.println("\nDetails");
+		e.display();		
+		System.out.println("\n-------->For Clothing Product<----------");
+		System.out.println("Enter id");
+		id = sc.nextInt();
+		System.out.println("Enter name");
+		sc.nextLine();
+		name=sc.nextLine();
+		System.out.println("Enter price");
+		price = sc.nextDouble();
+
+		Clothing c = new Clothing(id,name,price);
+		System.out.println("\nDetails");		
+		System.out.println("==================================");
+		c.display();
 	}
 }
