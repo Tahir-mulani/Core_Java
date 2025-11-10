@@ -11,16 +11,16 @@ Explanation:
 import java.util.Scanner;
 class Loan
 {
-	int amount,years;
-	Loan(int amount,int years)
+	double amount,years;
+	Loan(double amount,int years)
 	{
 		this.amount=amount;
-		this.years=amount;
+		this.years=years;
 	}
 	double CalculateEMI()
 	{
 		double r=(0.07/12)/100;
-		int n=(years*12;
+		int n=(int)years*12;
 		double temp=1;
 		for(int i=1;i<n;i++)
 		{
@@ -31,19 +31,19 @@ class Loan
 	}
 	void TotalEMI()
 	{
-		System.out.prinln(CalculateEMI());
+		System.out.println(CalculateEMI());
 	}
 }	
 class HomeLoan extends Loan
 {
-	HomeLoan(int amount,int years)
+	HomeLoan(double amount,int years)
 	{
-		super(amount,years)
+		super(amount,years);
 	}
 	double CalculateEMI()
 	{
 		double r=(0.07/12)/100;
-		int n=(years*12;
+		int n=(int)years*12;
 		double temp=1;
 		for(int i=1;i<n;i++)
 		{
@@ -52,26 +52,27 @@ class HomeLoan extends Loan
 		double emi=(amount*r*temp)/(temp-1);
 		return emi;
 	}
-	
+}	
 class CarLoan extends Loan
 {
-	CarLoan()
+	CarLoan(double amount,int years)
 	{
 		super(amount,years);
 	}
-	int CalculateEMI()
+	double CalculateEMI()
 	{
 		double r=(0.09/12)/100;
-		int n=(years*12);
+		int n=(int)years*12;
 		double temp=1;
 		for(int i=1;i<n;i++)
 		{
 			temp=temp*(1+r);
 		}
-		double emi=(amount*r*temp)/(temp-1));
+		double emi=(amount*r*temp)/(temp-1);
 		return emi;
 	}
-pubilc class LoanAPP
+}
+public class LoanAPP
 {
 	public static void main(String x[])
 	{
@@ -80,8 +81,16 @@ pubilc class LoanAPP
 		double amount=sc.nextDouble();
 		
 		System.out.println("Enter Number of Years for Repayement");
-		double amount=sc.nextDouble();
+		int years=sc.nextInt();
 		
+		HomeLoan home = new HomeLoan(amount,years);
+		System.out.println("---For Home Loan---");
+		home.TotalEMI();
+		
+		CarLoan car = new CarLoan(amount,years);
+		System.out.println("---For Car Loan---");
+		car.TotalEMI();
+	
 	}
 	
 }

@@ -44,19 +44,7 @@ class EngineeringStudent extends Student
 	{
 		super(name,marks);
 	}
-	/*
-	boolean getResult()
-	{
-		if(marks>=50)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-	*/
+
 	void displayResult()
 	{
 		super.displayResult();
