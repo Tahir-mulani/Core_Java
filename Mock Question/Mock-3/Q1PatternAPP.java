@@ -11,7 +11,7 @@
 public class Q1PatternAPP
 {
 	public static void main(String x[])
-	{
+	{ 
 		for(int i=1;i<=7;i++)
 		{
 			int num=(i<=4)? i:8-i;
@@ -26,5 +26,6 @@ public class Q1PatternAPP
 			}
 			System.out.print("\n");
 		}
+		
 	}
 }

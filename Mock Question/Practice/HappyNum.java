@@ -1,6 +1,7 @@
 //Q2. Write a java program to print 1 to nth happy number.
 
 import java.util.Scanner;
+
 public class HappyNum
 {
 	public static void main(String x[])
@@ -30,5 +31,6 @@ public class HappyNum
 			}
 			
 		}
+		
 	}
 }
