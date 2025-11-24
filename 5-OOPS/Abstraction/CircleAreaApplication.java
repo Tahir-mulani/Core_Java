@@ -37,7 +37,7 @@ public class CircleAreaApplication
 		System.out.println("Area of Circle : "+result);
 		
 		c = new Circum();
-		c.setRadius(3.0f);
+		//c.setRadius(3.0f);
 		result=c.getCircleResult();
 		System.out.println("Circumference of Circle : "+result);
 	}
