@@ -31,7 +31,6 @@ public class CountInversion_Array
 				{
 					count++;
 					System.out.printf("(%d,%d)",a[i],a[j]);
-					//system.out.print("("+a[i]+","+a[j]+")");
 				}
 			}
 		}
