@@ -17,7 +17,7 @@ public class LongestSubArrSumAPP
 				while(sum >= k)
 				{
 					sum=sum-arr[start];
-					start=start+1;
+					start++;
 				}
 			int currentLength = end-start+1;
 			

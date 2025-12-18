@@ -13,6 +13,7 @@ public class Missing_Number
 	public static void main(String x[])
 	{
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Array length");
 		int N;
 		N=sc.nextInt();
 		int a[]= new int[N];
@@ -28,7 +29,7 @@ public class Missing_Number
 			{
 				while((a[i]+1)<a[i+1])
 				{
-					System.out.printf("%d\t",++a[i]);
+					System.out.printf("%d ",++a[i]);
 				}
 			}
 		}

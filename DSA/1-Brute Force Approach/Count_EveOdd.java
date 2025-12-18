@@ -13,7 +13,7 @@ public class Count_EveOdd
 	public static void main(String x[])
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("enter limit");
+		System.out.println("enter size");
 		int n=sc.nextInt();
 		int a[]=new int[n];
 		System.out.println("enter array element");

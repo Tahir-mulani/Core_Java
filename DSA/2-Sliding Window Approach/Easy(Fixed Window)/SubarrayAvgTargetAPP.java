@@ -27,7 +27,13 @@ public class SubarrayAvgTargetAPP
 				count++;
 			}
 		}
-		System.out.println(count);
+		System.out.print("Given Array : ");
+		for(int val: arr)
+		{
+			System.out.print(val+" ");
+		}
+		System.out.print("\nSubarrays of Size " +k+ " with Average > " +x+ " is : "+count);
+		
 	}
 }
 		
