@@ -3,7 +3,7 @@
  	Character→ g
   Output: 2 */
   import java.util.*;
-public class CountOccurrenceCharacterAPP {
+public class CountSingleCharacterAPP {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter String ");
@@ -15,7 +15,7 @@ public class CountOccurrenceCharacterAPP {
         for(int i=0;i<str.length();i++){
             if(str.charAt(i) == ch ){
                 count++;
-                 
+                
             }
         }
         System.out.print("Given Character "+ch+" occurrence is "+count);
