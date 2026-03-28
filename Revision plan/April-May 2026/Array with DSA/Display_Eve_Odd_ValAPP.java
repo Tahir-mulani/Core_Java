@@ -1,6 +1,6 @@
-//Write a java program to remove duplicated values from arrays.
+//Write a Java program to display even & odd values from an array.
 import java.util.*;
-public class Remove_Duplicate_EleAPP
+public class Display_Eve_Odd_ValAPP
 {
 	public static void main(String x[])
 	{
@@ -14,21 +14,17 @@ public class Remove_Duplicate_EleAPP
 		{			 
 			arr[i] = sc.nextInt();
 		}
-		Arrays.sort(arr);
-		int max = -1;
-		for(int i=1;i<arr.length;i++)
+		
+		for(int i=0;i<n;i++)
 		{
-			if(arr[i] == arr[i-1])
+			if(arr[i]%2 ==0)
 			{
-				arr[i] = max;
+				System.out.print("\nEven -> "+arr[i]);
+			}
+			else
+			{
+				System.out.print("\nOdd -> "+arr[i]);
 			}
 		}
-		for(int i=0;i<arr.length;i++)
-		{
-			if(arr[i] != max)
-			{
-				System.out.print(arr[i]+" ");
-			}
-		}				
 	}
 }
