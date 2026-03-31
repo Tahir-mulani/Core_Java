@@ -14,6 +14,24 @@ public class Remove_Duplicate_EleAPP
 		{			 
 			arr[i] = sc.nextInt();
 		}
+		//without sorting logic
+		
+		int j=0;  //first pointer
+		for(int i=1;i<n;i++)
+		{
+			if(arr[i] != arr[i-1])
+			{
+				j++;
+				arr[j] = arr[i];
+			}
+		}
+		
+		for(int i=0;i<= j;i++)
+		{
+			System.out.print(arr[i]+" ");
+		}
+		//with sorting logic
+		/*
 		Arrays.sort(arr);
 		int max = -1;
 		for(int i=1;i<arr.length;i++)
@@ -29,6 +47,6 @@ public class Remove_Duplicate_EleAPP
 			{
 				System.out.print(arr[i]+" ");
 			}
-		}				
+		}*/				
 	}
 }
