@@ -26,7 +26,7 @@ public class Remove_Duplicate_EleAPP
 			}
 		}
 		
-		for(int i=0;i<= j;i++)
+		for(int i=0;i<j;i++)
 		{
 			System.out.print(arr[i]+" ");
 		}
