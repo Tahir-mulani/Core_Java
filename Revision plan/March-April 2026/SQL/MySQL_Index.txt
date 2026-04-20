@@ -1,0 +1,21 @@
+🔹 INDEX (20 Problems)
+21.Create an index idx_emp_name on Employee(Name).
+22.Create an index idx_salary on Employee(Salary).
+23.Create a composite index idx_dept_salary on (DeptID, Salary).
+24.Create a unique index on Email column.
+25.Create an index on multiple columns (Name, DeptID).
+26.Drop index idx_emp_name.
+27.Create an index on Order table for faster search by OrderDate.
+28.Create index on Product table for ProductName.
+29.Create index on foreign key column DeptID.
+30.Create index for optimizing join between Employee and Department.
+31.Create index on salary in descending order (if supported).
+32.Create index on Customer table for PhoneNumber.
+33.Drop index on Salary column.
+34.Create index on multiple columns (City, State).
+35.Create index on table with large dataset for performance testing.
+36.Create index on column frequently used in WHERE clause.
+37.Create index on column used in ORDER BY.
+38.Create index on column used in GROUP BY.
+39.Create index on nullable column.
+40.Create index on table to optimize LIKE 'A%' queries.

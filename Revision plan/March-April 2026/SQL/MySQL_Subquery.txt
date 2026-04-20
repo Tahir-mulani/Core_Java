@@ -1,0 +1,75 @@
+🔹 SUBQUERY (20 Problems)
+41.Find employees whose salary is greater than average salary.
+mysql> select*from employee where salary >(select avg(salary) from employee);
++--------+----------+--------+---------+
+| emp_id | emp_name | salary | dept_id |
++--------+----------+--------+---------+
+|      2 | Alice    |  60000 |      20 |
+|      4 | Charlie  |  70000 |      30 |
+|      6 | Eva      |  80000 |      30 |
+|      8 | Grace    |  90000 |      40 |
+|     10 | Ivy      |  75000 |      20 |
++--------+----------+--------+---------+
+
+42.Find employees with maximum salary using subquery.
+mysql> select*from employee where salary =(select MAx(salary) from employee);
++--------+----------+--------+---------+
+| emp_id | emp_name | salary | dept_id |
++--------+----------+--------+---------+
+|      8 | Grace    |  90000 |      40 |
++--------+----------+--------+---------+
+ 
+43.Find employees working in the same department as 'John'.
+mysql> select*from employee where dept_id IN(select dept_id from employee where emp_name = 'John');
++--------+----------+--------+---------+
+| emp_id | emp_name | salary | dept_id |
++--------+----------+--------+---------+
+|      1 | John     |  50000 |      10 |
+|      3 | Bob      |  45000 |      10 |
+|      7 | Frank    |  30000 |      10 |
++--------+----------+--------+---------+
+
+44.Find employees not in department 10 using subquery.
+mysql> select*from employee where dept_id NOT IN(select dept_id from employee where dept_id = 10);
++--------+----------+--------+---------+
+| emp_id | emp_name | salary | dept_id |
++--------+----------+--------+---------+
+|      2 | Alice    |  60000 |      20 |
+|      4 | Charlie  |  70000 |      30 |
+|      5 | David    |  55000 |      20 |
+|      6 | Eva      |  80000 |      30 |
+|      8 | Grace    |  90000 |      40 |
+|      9 | Helen    |  40000 |      40 |
+|     10 | Ivy      |  75000 |      20 |
++--------+----------+--------+---------+
+                OR
+mysql> select*from employee where dept_id NOT IN(10);
++--------+----------+--------+---------+
+| emp_id | emp_name | salary | dept_id |
++--------+----------+--------+---------+
+|      2 | Alice    |  60000 |      20 |
+|      4 | Charlie  |  70000 |      30 |
+|      5 | David    |  55000 |      20 |
+|      6 | Eva      |  80000 |      30 |
+|      8 | Grace    |  90000 |      40 |
+|      9 | Helen    |  40000 |      40 |
+|     10 | Ivy      |  75000 |      20 |
++--------+----------+--------+---------+
+				
+45.Find second highest salary using subquery.
+
+46.Find employees whose salary is less than minimum salary in another department.
+47.Find departments with more employees than average.
+48.Find employees whose salary equals max salary in their department.
+49.Use subquery in SELECT to display average salary.
+50.Use subquery in FROM clause to create derived table.
+51.Use correlated subquery to find employees earning above department average.
+52.Find employees who do not exist in another table.
+53.Use EXISTS to find employees in departments.
+54.Use NOT EXISTS to find employees without projects.
+55.Find employees whose salary is in top 3 salaries.
+56.Find employees with salary greater than all employees in department 10.
+57.Use subquery to delete employees with lowest salary.
+58.Use subquery in UPDATE to increase salary based on average.
+59.Use subquery with IN operator to filter records.
+60.Use scalar subquery to display department name along with employee.

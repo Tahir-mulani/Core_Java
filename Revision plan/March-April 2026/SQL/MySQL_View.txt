@@ -1,0 +1,103 @@
+🔹 VIEW (20 Problems)
+1.Create a view emp_view to display all columns from Employee table.
+mysql> create view emp_view AS select * from employee;
+
+mysql> select*from emp_view;
++--------+----------+---------+--------+------------+-------+
+| emp_id | emp_name | dept_id | salary | hire_date  | bonus |
++--------+----------+---------+--------+------------+-------+
+|      1 | Amit     |      10 |  60000 | 2019-06-15 |  NULL |
+|      2 | Ravi     |      20 |  45000 | 2021-03-10 |  NULL |
+|      3 | Sneha    |      10 |  75000 | 2022-01-20 |  NULL |
+|      4 | Priya    |      30 |  30000 | 2023-07-25 |  NULL |
+|      5 | Vikram   |      20 |  55000 | 2018-11-05 |  NULL |
+|      6 | Neha     |      10 |   NULL | 2024-02-14 |  NULL |
+|      7 | Arjun    |      30 |  70000 | 2020-09-30 |  NULL |
+|      8 | Kiran    |      40 |  52000 | 2021-12-01 |  NULL |
+|      9 | Meena    |      40 |  48000 | 2022-05-18 |  NULL |
+|     10 | Suresh   |      20 |  90000 | 2017-08-22 |  NULL |
++--------+----------+---------+--------+------------+-------+ 
+
+2.Create a view high_salary_emp for employees with salary > 50000.
+mysql> create view high_salary_emp AS select * from employee where salary > 50000;
+
+mysql> select*from high_salary_emp;
++--------+----------+---------+--------+------------+-------+
+| emp_id | emp_name | dept_id | salary | hire_date  | bonus |
++--------+----------+---------+--------+------------+-------+
+|      1 | Amit     |      10 |  60000 | 2019-06-15 |  NULL |
+|      3 | Sneha    |      10 |  75000 | 2022-01-20 |  NULL |
+|      5 | Vikram   |      20 |  55000 | 2018-11-05 |  NULL |
+|      7 | Arjun    |      30 |  70000 | 2020-09-30 |  NULL |
+|      8 | Kiran    |      40 |  52000 | 2021-12-01 |  NULL |
+|     10 | Suresh   |      20 |  90000 | 2017-08-22 |  NULL |
++--------+----------+---------+--------+------------+-------+
+
+3.Create a view dept10_emp for employees in department 10.
+mysql> create view dept10_emp AS select*from employee where dept_id = 10;
+ 
+
+mysql> select*from  dept10_emp;
++--------+----------+---------+--------+------------+-------+
+| emp_id | emp_name | dept_id | salary | hire_date  | bonus |
++--------+----------+---------+--------+------------+-------+
+|      1 | Amit     |      10 |  60000 | 2019-06-15 |  NULL |
+|      3 | Sneha    |      10 |  75000 | 2022-01-20 |  NULL |
+|      6 | Neha     |      10 |   NULL | 2024-02-14 |  NULL |
++--------+----------+---------+--------+------------+-------+
+
+4.Create a view emp_name_salary showing only name and salary.
+mysql> create view emp_name_salary as select emp_name,salary from employee;
+
+mysql> select*from emp_name_salary;
++----------+--------+
+| emp_name | salary |
++----------+--------+
+| Amit     |  60000 |
+| Ravi     |  45000 |
+| Sneha    |  75000 |
+| Priya    |  30000 |
+| Vikram   |  55000 |
+| Neha     |   NULL |
+| Arjun    |  70000 |
+| Kiran    |  52000 |
+| Meena    |  48000 |
+| Suresh   |  90000 |
++----------+--------+
+
+5.Create a view emp_bonus adding 10% bonus column.
+mysql> create view emp_bonus AS select emp_id,emp_name,salary,salary*0.10 AS bonus from employee;
+
+mysql> select *from emp_bonus;
++--------+----------+--------+---------+
+| emp_id | emp_name | salary | bonus   |
++--------+----------+--------+---------+
+|      1 | Amit     |  60000 | 6000.00 |
+|      2 | Ravi     |  45000 | 4500.00 |
+|      3 | Sneha    |  75000 | 7500.00 |
+|      4 | Priya    |  30000 | 3000.00 |
+|      5 | Vikram   |  55000 | 5500.00 |
+|      6 | Neha     |   NULL |    NULL |
+|      7 | Arjun    |  70000 | 7000.00 |
+|      8 | Kiran    |  52000 | 5200.00 |
+|      9 | Meena    |  48000 | 4800.00 |
+|     10 | Suresh   |  90000 | 9000.00 |
++--------+----------+--------+---------+
+
+6.Create a view emp_dept_view using join between Employee and Department.
+
+7.Create a view avg_salary_view showing department-wise average salary.
+8.Create a view top_earners for employees with salary above average.
+9.Create a view emp_count_dept showing employee count per department.
+10.Create a view emp_sorted sorted by salary descending.
+11.Create a view recent_emp for employees hired after 2020.
+12.Create a view unique_dept showing distinct departments.
+13.Create a view emp_alias_view using column aliases.
+14.Create a view emp_view2 based on another view.
+15.Create a view emp_null_salary where salary is NULL.
+16.Create a view emp_range_salary for salary between 30000 and 70000.
+17.Create a view emp_group_view using GROUP BY department.
+18.Create a view emp_max_salary showing max salary per department.
+19.Create a view emp_min_salary showing minimum salary per department.
+20.Create a view emp_join_three joining Employee, Department, and Location tables.
+
