@@ -8,7 +8,7 @@ public class GetAllFilesFolders
 		
 		for(File f1:fileList)
 		{
-			if(f1.isFile())
+			if(f1.isFile	())
 			{
 				System.out.println(f1);
 			}
