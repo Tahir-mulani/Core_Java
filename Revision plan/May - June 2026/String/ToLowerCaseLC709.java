@@ -9,7 +9,7 @@ public class ToLowerCaseLC709
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter String");
-		String str = sc.next();
+		String str = sc.nextLine();
 		String result = toLowerCase(str);
 		System.out.println(result);
 	}

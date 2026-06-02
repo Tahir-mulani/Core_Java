@@ -9,7 +9,7 @@ public class ReverseStringLC344
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter String");
-		String str = sc.next();
+		String str = sc.nextLine();
 		System.out.println("Before reverse ="+str);
 		System.out.println("After reverse ="+getReverseString(str));
 		

@@ -9,7 +9,7 @@ public class CountVowelsConsonants
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter String");
-		String str = sc.next();
+		String str = sc.nextLine();
 		int voweCnt = 0,consoCnt = 0;
 		for(int i=0;i<str.length();i++)
 		{
