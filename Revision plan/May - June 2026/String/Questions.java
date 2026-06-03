@@ -10,7 +10,8 @@
 
 11. First Unique Character / Character Frequency (LC 387 Inspired)
 Given a string, count the frequency of each character 
-and display how many times every character appears in the string. Example: Input: "banana" → Output: b=1, a=3, n=2
+and display how many times every character appears in
+the string. Example: Input: "banana" → Output: b=1, a=3, n=2
 12. Replace Spaces with Hyphens (LC 1592 Inspired)
 Given a string containing spaces, replace every space character with a hyphen (-) and return the modified string. Example: Input: "hello world" → Output: "hello-world"
 13. Print Duplicate Characters (No LeetCode)
