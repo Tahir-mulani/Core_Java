@@ -1,29 +1,20 @@
-class A
+class Person
 {
-	A()
-	{
-		System.out.println("Constructor block");
-	}
-	
-	{
-		System.out.println("Instance block");
-	}
-	
-	static
-	{
-		System.out.println("static block");
-		
-	}
-	
-	public void demo(){
-		System.out.println("Method block");
-	}
+	String name;
 }
 public class DemoAPP
 {
+	static void change(Person p)
+	{
+		p = new Person();
+		p.name = "Bob";
+	}
+	
 	public static void main(String x[])
-	{	
-		A a = new A();
-		a.demo();	
+	{
+		Person person = new Person();
+		person.name ="Alice";
+		change(person);
+		 System.out.println(person.name);
 	}
 }
