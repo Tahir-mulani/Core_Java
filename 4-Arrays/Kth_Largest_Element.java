@@ -46,7 +46,7 @@ public class Kth_Largest_Element
 			{
 				if(arr[j] > smax && arr[j] < max)   //compare with max && smax
 				{
-					smax = arr[i];
+					smax = arr[j];
 				}
 			}
 			max = smax;  //change the value of max
