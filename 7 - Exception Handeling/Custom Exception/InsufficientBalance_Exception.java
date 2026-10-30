@@ -30,6 +30,9 @@ public class InsufficientBalance_Exception
 		} catch(Exception e)
 		{
 			System.out.println(e.getMessage());
+		} catch(InsufficientBalanceException e)
+		{
+			System.out.println(e.getMessage());
 		}
 	}
 }
