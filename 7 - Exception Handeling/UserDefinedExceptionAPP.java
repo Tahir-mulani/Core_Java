@@ -1,3 +1,4 @@
+//check voter elgibility custom exception
 class VoterException extends RuntimeException
 {
 	public String getErrorMessage()
